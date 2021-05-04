@@ -605,6 +605,29 @@
 
 
 /*=================================
+ CONTACT PAGE CSS
+==================================*/
+.contact-item{
+  margin-bottom: 30px;
+  h4{
+    text-transform: capitalize;
+    i{
+      width:20px;
+    }
+    span{
+      font-family: Oswald;
+      font-size: 16px;
+    }
+  }
+  p{
+    font-family: TrebuchetMS;
+    font-size: 16px;
+    line-height: 21px;
+    padding-left: 25px;
+  }
+}
+
+/*=================================
  RESPONSIVE CSS
 ==================================*/
 @media screen and (max-width:767px){
