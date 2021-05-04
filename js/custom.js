@@ -313,6 +313,13 @@ var appMaster = {
                             }
                         }
                     },
+					contact_subject: {
+                        validators: {
+                            notEmpty: {
+                                message: ''
+                            }
+                        }
+                    },
                     contact_message: {
                         validators: {
                             notEmpty: {
