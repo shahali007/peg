@@ -396,6 +396,10 @@
   .team-item {
     padding-bottom: 0;
     .description{
+      height: 125px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       .name {
         padding: 15px 0 7px;
       }
@@ -542,7 +546,7 @@
           color:#009049;
           font-size: 22px;
           &::after{
-            border-top: 3px solid #009049!important;
+            border-top: 3px solid #EB3D00!important;
             bottom: -10px;
             position: absolute;
           }
@@ -755,6 +759,11 @@
     opacity: 0.2;
   }
 
+  /* Team*/
+  #team{
+
+  }
+
   /* Footer */
   #peg-footer {
     .footer-area {
@@ -794,6 +803,8 @@
         }
       }
     }
-
+    .peg-copyright {
+      flex-wrap: wrap;
+    }
   }
 }
