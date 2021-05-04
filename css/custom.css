@@ -411,6 +411,12 @@
 #team .team-item {
   padding-bottom: 0;
 }
+#team .team-item .description {
+  height: 125px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 #team .team-item .description .name {
   padding: 15px 0 7px;
 }
@@ -541,7 +547,7 @@
   font-size: 22px;
 }
 .about-content .sidebar .widget .widget-title .title::after {
-  border-top: 3px solid #009049 !important;
+  border-top: 3px solid #EB3D00 !important;
   bottom: -10px;
   position: absolute;
 }
@@ -753,6 +759,7 @@
     opacity: 0.2;
   }
 
+  /* Team*/
   /* Footer */
   #peg-footer .footer-area ul.arrow-style {
     width: 100%;
@@ -788,6 +795,9 @@
   }
   #peg-footer .footer-area .footer-contact ul li i {
     width: 15px;
+  }
+  #peg-footer .peg-copyright {
+    flex-wrap: wrap;
   }
 }
 
