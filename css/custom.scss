@@ -260,6 +260,7 @@
 .nav .open > a:hover{
   background: #009049;
 }
+.dropdown-menu > li > a.active,
 .dropdown-menu > li > a:focus,
 .dropdown-menu > li > a:hover{
   background-color: #EB3D00;
@@ -343,7 +344,7 @@
   ul.arrow-style {
     margin-bottom: 0!important;
     li{
-      ont-size: 16px;
+      font-size: 16px;
       line-height: 20px;
       color: #000;
       font-family: TrebuchetMS;
@@ -627,6 +628,115 @@
   }
 }
 
+
+/*=================================
+ BUSINESS STRATEGY CSS
+==================================*/
+.business-strategy{
+  p{
+    font-size: 16px;
+    line-height: 22px;
+    color: #000;
+    font-family: TrebuchetMS;
+  }
+  ul.arrow-style{
+    overflow: visible;
+    li{
+      font-size: 16px;
+      border: none;
+      color: #000;
+      font-family: TrebuchetMS;
+      padding-left: 24px;
+      padding-top: 0;
+      padding-bottom: 0;
+      &:before{
+        color: #fff !important;
+        background: #009049;
+        height: 16px;
+        width: 16px;
+        border-radius: 100%;
+        text-align: center;
+        line-height: 15px;
+        top: 6px;
+        padding-left: 2px;
+      }
+    }
+  }
+}
+
+/*=================================
+ WHAT WE DO CSS
+==================================*/
+.what-we-do{
+  .special-feature{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .s-feature-box{
+    margin-bottom: 30px;
+    .mask-top{
+      background: #fff;
+      i{
+        color: #009049;
+        font-size: 45px;
+        line-height: 45px;
+      }
+      h4{
+        color: #000;
+        text-transform: capitalize;
+        margin-top: 10px;
+        &:before{
+          display: none;
+        }
+      }
+    }
+    .mask-bottom{
+      i{
+        color: #fff;
+        font-size: 45px;
+        line-height: 45px;
+      }
+      h4{
+        color: #fff;
+        text-transform: capitalize;
+      }
+    }
+  }
+}
+
+
+/*=================================
+ PROJECTS CSS
+==================================*/
+.projects{
+  .project-item{
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e1e1e1;
+    &:last-child{
+      border-bottom: none;
+    }
+    h4{
+      font-family: Oswald;
+      color: #009049;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    p{
+      color: #000;
+      font-family: TrebuchetMS;
+      margin-bottom: 0;
+      &.duration{
+        font-size: 17px;
+      }
+      &.btn{
+        color:#fff;
+      }
+    }
+  }
+}
+
 /*=================================
  RESPONSIVE CSS
 ==================================*/
@@ -782,9 +892,11 @@
     opacity: 0.2;
   }
 
-  /* Team*/
-  #team{
-
+  /* What We Do*/
+  .what-we-do{
+    .special-feature{
+      display: block;
+    }
   }
 
   /* Footer */
