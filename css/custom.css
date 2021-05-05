@@ -81,6 +81,10 @@
   padding-bottom: 55px !important;
 }
 
+.m-r-7 {
+  margin-right: 7px !important;
+}
+
 .border-top {
   border-top: 1px solid #e1e1e1 !important;
 }
@@ -703,9 +707,8 @@
 }
 .projects .project-item h4 {
   font-family: Oswald;
-  color: #009049;
-  font-size: 20px;
-  margin-bottom: 10px;
+  color: #000000;
+  font-size: 18px;
 }
 .projects .project-item p {
   color: #000;
@@ -716,9 +719,87 @@
   font-size: 17px;
 }
 .projects .project-item p.btn {
-  color: #fff;
+  color: #009049;
+  border: 1px double #009049;
+  border-radius: 2px;
+  padding: 4px 10px 1px;
+  display: inline-block;
+  cursor: inherit;
 }
 
+/*=================================
+ PHOTO GALLERY CSS
+==================================*/
+.photo-gallery .portfolio-grid .grids {
+  margin-bottom: 30px;
+}
+.photo-gallery .portfolio-grid .grids .grid {
+  overflow: hidden;
+  padding-bottom: 75%;
+}
+.photo-gallery .portfolio-grid .grids .grid img {
+  position: absolute;
+  height: 100%;
+  max-width: none;
+}
+.photo-gallery .portfolio-grid .grids .grid .caption-block {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transition: all 0.3s;
+  background-color: rgba(0, 144, 73, 0.65) !important;
+}
+.photo-gallery .portfolio-grid .grids .grid .caption-block h4 {
+  color: #fff;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+.photo-gallery .portfolio-grid .grids .grid .figcaption {
+  position: absolute;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  align-content: space-between;
+  flex-wrap: wrap;
+  text-align: left;
+  top: 100%;
+  transform: none;
+}
+.photo-gallery .portfolio-grid .grids .grid .figcaption p {
+  color: #000;
+  font-family: TrebuchetMS;
+}
+.photo-gallery .portfolio-grid .grids .grid .figcaption p strong {
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+.photo-gallery .portfolio-grid .grids:hover .figcaption {
+  opacity: 1;
+  background: rgba(255, 255, 255, 0.75);
+  top: 0;
+}
+.photo-gallery .portfolio-grid .grids:hover .caption-block {
+  opacity: 0;
+}
+.photo-gallery .portfolio-grid .grids:hover .grid {
+  background-color: transparent;
+}
+.photo-gallery .portfolio-grid .grids:hover img {
+  opacity: 1;
+}
+
+.photo-gallery-details .portfolio-grid .grids {
+  margin-bottom: 30px;
+}
+.photo-gallery-details .portfolio-grid .grids .grid {
+  overflow: hidden;
+  padding-bottom: 75%;
+}
+.photo-gallery-details .portfolio-grid .grids .grid img {
+  position: absolute;
+  height: 100%;
+  max-width: none;
+}
 /*=================================
  RESPONSIVE CSS
 ==================================*/
