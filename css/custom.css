@@ -81,6 +81,10 @@
   padding-bottom: 55px !important;
 }
 
+.m-0 {
+  margin: 0 !important;
+}
+
 .m-r-7 {
   margin-right: 7px !important;
 }
@@ -96,7 +100,13 @@
 .section-title h2 {
   font-family: Oswald, sans-serif;
   color: #009049;
-  padding: 0px 0;
+  padding: 0;
+}
+
+.form-control {
+  color: #000 !important;
+  font-family: TrebuchetMS;
+  font-size: 16px;
 }
 
 .d-flex {
@@ -116,6 +126,10 @@
   width: 40px;
 }
 
+.page-header {
+  border-top: none;
+}
+
 /* Header Top Bar css*/
 #top-bar .top-contact a {
   font-size: 16px;
@@ -133,6 +147,10 @@
 }
 
 /* Navbar css */
+.sticky-wrapper.is-sticky #sticker {
+  position: inherit !important;
+}
+
 .navbar-brand {
   display: flex;
   flex-wrap: wrap;
@@ -417,7 +435,7 @@
   padding-bottom: 0;
 }
 #team .team-item .description {
-  height: 125px;
+  height: 95px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -446,7 +464,7 @@
   font-size: 24px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 #peg-footer .footer-area ul.arrow-style {
   width: 80%;
@@ -518,7 +536,7 @@
 #peg-footer .position-right {
   position: absolute;
   right: 0;
-  bottom: 10px;
+  bottom: 45px;
   top: auto;
 }
 #peg-footer .gray-bg i {
@@ -526,10 +544,22 @@
 }
 
 /*=================================
+ CONTACT PAGE CSS
+==================================*/
+#contact-us .contact-form .btn {
+  background: #009049;
+  border-color: #009049;
+}
+#contact-us .contact-form .btn:hover {
+  background: #EB3D00 !important;
+  border-color: #EB3D00;
+}
+
+/*=================================
  ABOUT PAGE CSS
 ==================================*/
 .about-page-header {
-  height: 300px;
+  height: 220px;
   background-size: cover;
 }
 
@@ -732,6 +762,12 @@
 ==================================*/
 .photo-gallery .portfolio-grid .grids {
   margin-bottom: 30px;
+  /*&:hover .figcaption {
+    opacity: 1;
+  }*/
+  /*&:hover img{
+    opacity: 1;
+  }*/
 }
 .photo-gallery .portfolio-grid .grids .grid {
   overflow: hidden;
@@ -740,6 +776,7 @@
 .photo-gallery .portfolio-grid .grids .grid img {
   position: absolute;
   height: 100%;
+  left: 0;
   max-width: none;
 }
 .photo-gallery .portfolio-grid .grids .grid .caption-block {
@@ -747,45 +784,22 @@
   bottom: 0;
   width: 100%;
   transition: all 0.3s;
-  background-color: rgba(0, 144, 73, 0.65) !important;
+  background-color: #009049 !important;
 }
 .photo-gallery .portfolio-grid .grids .grid .caption-block h4 {
   color: #fff;
-  font-size: 16px;
+  font-size: 17px;
   text-transform: capitalize;
 }
-.photo-gallery .portfolio-grid .grids .grid .figcaption {
-  position: absolute;
-  height: 100%;
-  z-index: 1;
-  display: flex;
-  align-content: space-between;
-  flex-wrap: wrap;
-  text-align: left;
-  top: 100%;
-  transform: none;
-}
-.photo-gallery .portfolio-grid .grids .grid .figcaption p {
-  color: #000;
-  font-family: TrebuchetMS;
-}
-.photo-gallery .portfolio-grid .grids .grid .figcaption p strong {
-  font-size: 17px;
-  margin-bottom: 10px;
-}
-.photo-gallery .portfolio-grid .grids:hover .figcaption {
-  opacity: 1;
-  background: rgba(255, 255, 255, 0.75);
-  top: 0;
+.photo-gallery .portfolio-grid .grids .grid .figcaption h4 {
+  color: #fff;
+  text-transform: capitalize;
 }
 .photo-gallery .portfolio-grid .grids:hover .caption-block {
   opacity: 0;
 }
 .photo-gallery .portfolio-grid .grids:hover .grid {
-  background-color: transparent;
-}
-.photo-gallery .portfolio-grid .grids:hover img {
-  opacity: 1;
+  background-color: #009049;
 }
 
 .photo-gallery-details .portfolio-grid .grids {
@@ -864,6 +878,18 @@
     padding: 10px 8px;
   }
   .navbar-nav > li > a.has-submenu::after {
+    color: #EB3D00 !important;
+  }
+
+  .navbar-nav .open .dropdown-menu {
+    margin-left: 0 !important;
+  }
+  .navbar-nav .open .dropdown-menu > li > a {
+    color: #000 !important;
+    border-bottom: 1px solid #e1e1e1 !important;
+    padding: 7px;
+  }
+  .navbar-nav .open .dropdown-menu > li > a:hover {
     color: #EB3D00 !important;
   }
 

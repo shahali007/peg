@@ -80,6 +80,9 @@
 .p-b-55{
   padding-bottom: 55px!important;
 }
+.m-0{
+  margin: 0!important;
+}
 .m-r-7{
   margin-right: 7px!important;
 }
@@ -92,7 +95,12 @@
 .section-title h2 {
   font-family: Oswald,sans-serif;
   color: #009049;
-  padding: 0px 0;
+  padding: 0;
+}
+.form-control{
+  color: #000!important;
+  font-family: TrebuchetMS;
+  font-size: 16px;
 }
 .d-flex{
   display: flex;
@@ -108,6 +116,9 @@
   margin: -2px auto;
   position: absolute;
   width: 40px;
+}
+.page-header {
+  border-top: none;
 }
 /* Header Top Bar css*/
 #top-bar .top-contact{
@@ -126,6 +137,9 @@
   padding-bottom: 0;
 }
 /* Navbar css */
+.sticky-wrapper.is-sticky #sticker{
+  position:inherit!important;
+}
 .navbar-brand {
   display: flex;
   flex-wrap: wrap;
@@ -400,7 +414,7 @@
   .team-item {
     padding-bottom: 0;
     .description{
-      height: 125px;
+      height: 95px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -436,7 +450,7 @@
         font-size: 24px;
         font-weight: 700;
         text-transform: uppercase;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
       }
     }
     ul.arrow-style{
@@ -510,7 +524,7 @@
   .position-right {
     position: absolute;
     right: 0;
-    bottom: 10px;
+    bottom: 45px;
     top: auto;
   }
   .gray-bg i{
@@ -522,10 +536,26 @@
 
 
 /*=================================
+ CONTACT PAGE CSS
+==================================*/
+#contact-us{
+  .contact-form{
+    .btn{
+      background: #009049;
+      border-color:#009049;
+      &:hover{
+        background: #EB3D00!important;
+        border-color:#EB3D00
+      }
+    }
+  }
+}
+
+/*=================================
  ABOUT PAGE CSS
 ==================================*/
 .about-page-header{
-  height: 300px;
+  height: 220px;
   background-size: cover;
 }
 .about-content{
@@ -757,6 +787,7 @@
         img{
           position: absolute;
           height: 100%;
+          left: 0;
           max-width: none;
         }
         .caption-block{
@@ -764,47 +795,35 @@
           bottom: 0;
           width: 100%;
           transition:all 0.3s;
-          background-color: rgba(0, 144, 73, 65%)!important;
-          h4{
+          background-color: #009049!important;
+        h4{
             color: #fff;
-            font-size: 16px;
+            font-size: 17px;
             text-transform: capitalize;
           }
         }
         .figcaption {
-          position: absolute;
-          height: 100%;
-          z-index: 1;
-          display: flex;
-          align-content: space-between;
-          flex-wrap: wrap;
-          text-align: left;
-          top: 100%;
-          transform: none;
-          p{
-            color: #000;
-            font-family: TrebuchetMS;
-            strong{
-              font-size: 17px;
-              margin-bottom: 10px;
-            }
+          h4{
+            color: #fff;
+            text-transform: capitalize;
+          }
+          i{
+
           }
         }
       }
-      &:hover .figcaption {
+      /*&:hover .figcaption {
         opacity: 1;
-        background: rgba(255, 255, 255, 75%);
-        top:0;
-      }
+      }*/
       &:hover .caption-block{
         opacity: 0;
       }
       &:hover .grid{
-        background-color:transparent;
+        background-color: rgba(0, 144, 73, 1);
       }
-      &:hover img{
+      /*&:hover img{
         opacity: 1;
-      }
+      }*/
     }
   }
 }
@@ -881,6 +900,17 @@
     padding: 10px 8px;
     &::after{
       color:#EB3D00!important;
+    }
+  }
+  .navbar-nav .open .dropdown-menu {
+    margin-left: 0 !important;
+    >li>a {
+      color: #000!important;
+      border-bottom: 1px solid #e1e1e1!important;
+      padding: 7px;
+      &:hover{
+        color:#EB3D00!important;
+      }
     }
   }
   .navbar-toggle {
