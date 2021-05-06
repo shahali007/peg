@@ -205,7 +205,7 @@ var appMaster = {
 		(function($) {
 			"use strict";
 			if( $("a[rel^='prettyPhoto'], a[data-rel^='prettyPhoto']").length != 0 ) { 
-			 $("a[rel^='prettyPhoto'], a[data-rel^='prettyPhoto']").prettyPhoto({hook: 'data-rel', theme: "dark_square", social_tools: false, deeplinking: false});
+			 $("a[rel^='prettyPhoto'], a[data-rel^='prettyPhoto']").prettyPhoto({hook: 'data-rel', theme: "dark_square", social_tools: false, deeplinking: false, autoplay_slideshow: true, slideshow: 4000});
 			}
 		 })(jQuery);
 	},
@@ -307,6 +307,13 @@ var appMaster = {
                         }
                     },
 					contact_phone: {
+                        validators: {
+                            notEmpty: {
+                                message: ''
+                            }
+                        }
+                    },
+					contact_subject: {
                         validators: {
                             notEmpty: {
                                 message: ''

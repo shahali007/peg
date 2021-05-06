@@ -80,6 +80,12 @@
 .p-b-55{
   padding-bottom: 55px!important;
 }
+.m-0{
+  margin: 0!important;
+}
+.m-r-7{
+  margin-right: 7px!important;
+}
 .border-top{
   border-top:1px solid #e1e1e1!important;
 }
@@ -89,7 +95,12 @@
 .section-title h2 {
   font-family: Oswald,sans-serif;
   color: #009049;
-  padding: 0px 0;
+  padding: 0;
+}
+.form-control{
+  color: #000!important;
+  font-family: TrebuchetMS;
+  font-size: 16px;
 }
 .d-flex{
   display: flex;
@@ -105,6 +116,9 @@
   margin: -2px auto;
   position: absolute;
   width: 40px;
+}
+.page-header {
+  border-top: none;
 }
 /* Header Top Bar css*/
 #top-bar .top-contact{
@@ -123,6 +137,9 @@
   padding-bottom: 0;
 }
 /* Navbar css */
+.sticky-wrapper.is-sticky #sticker{
+  position:inherit!important;
+}
 .navbar-brand {
   display: flex;
   flex-wrap: wrap;
@@ -260,6 +277,7 @@
 .nav .open > a:hover{
   background: #009049;
 }
+.dropdown-menu > li > a.active,
 .dropdown-menu > li > a:focus,
 .dropdown-menu > li > a:hover{
   background-color: #EB3D00;
@@ -343,7 +361,7 @@
   ul.arrow-style {
     margin-bottom: 0!important;
     li{
-      ont-size: 16px;
+      font-size: 16px;
       line-height: 20px;
       color: #000;
       font-family: TrebuchetMS;
@@ -396,7 +414,7 @@
   .team-item {
     padding-bottom: 0;
     .description{
-      height: 125px;
+      height: 95px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -432,7 +450,7 @@
         font-size: 24px;
         font-weight: 700;
         text-transform: uppercase;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
       }
     }
     ul.arrow-style{
@@ -506,7 +524,7 @@
   .position-right {
     position: absolute;
     right: 0;
-    bottom: 10px;
+    bottom: 45px;
     top: auto;
   }
   .gray-bg i{
@@ -518,10 +536,26 @@
 
 
 /*=================================
+ CONTACT PAGE CSS
+==================================*/
+#contact-us{
+  .contact-form{
+    .btn{
+      background: #009049;
+      border-color:#009049;
+      &:hover{
+        background: #EB3D00!important;
+        border-color:#EB3D00
+      }
+    }
+  }
+}
+
+/*=================================
  ABOUT PAGE CSS
 ==================================*/
 .about-page-header{
-  height: 300px;
+  height: 220px;
   background-size: cover;
 }
 .about-content{
@@ -605,6 +639,213 @@
 
 
 /*=================================
+ CONTACT PAGE CSS
+==================================*/
+.contact-item{
+  margin-bottom: 30px;
+  h4{
+    text-transform: capitalize;
+    i{
+      width:20px;
+    }
+    span{
+      font-family: Oswald;
+      font-size: 16px;
+    }
+  }
+  p{
+    font-family: TrebuchetMS;
+    font-size: 16px;
+    line-height: 21px;
+    padding-left: 25px;
+  }
+}
+
+
+/*=================================
+ BUSINESS STRATEGY CSS
+==================================*/
+.business-strategy{
+  p{
+    font-size: 16px;
+    line-height: 22px;
+    color: #000;
+    font-family: TrebuchetMS;
+  }
+  ul.arrow-style{
+    overflow: visible;
+    li{
+      font-size: 16px;
+      border: none;
+      color: #000;
+      font-family: TrebuchetMS;
+      padding-left: 24px;
+      padding-top: 0;
+      padding-bottom: 0;
+      &:before{
+        color: #fff !important;
+        background: #009049;
+        height: 16px;
+        width: 16px;
+        border-radius: 100%;
+        text-align: center;
+        line-height: 15px;
+        top: 6px;
+        padding-left: 2px;
+      }
+    }
+  }
+}
+
+/*=================================
+ WHAT WE DO CSS
+==================================*/
+.what-we-do{
+  .special-feature{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .s-feature-box{
+    margin-bottom: 30px;
+    .mask-top{
+      background: #fff;
+      i{
+        color: #009049;
+        font-size: 45px;
+        line-height: 45px;
+      }
+      h4{
+        color: #000;
+        text-transform: capitalize;
+        margin-top: 10px;
+        &:before{
+          display: none;
+        }
+      }
+    }
+    .mask-bottom{
+      i{
+        color: #fff;
+        font-size: 45px;
+        line-height: 45px;
+      }
+      h4{
+        color: #fff;
+        text-transform: capitalize;
+      }
+    }
+  }
+}
+
+
+/*=================================
+ PROJECTS CSS
+==================================*/
+.projects{
+  .project-item{
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e1e1e1;
+    &:last-child{
+      border-bottom: none;
+    }
+    h4{
+      font-family: Oswald;
+      color: #000000;
+      font-size: 18px;
+    }
+    p{
+      color: #000;
+      font-family: TrebuchetMS;
+      margin-bottom: 0;
+      &.duration{
+        font-size: 17px;
+      }
+      &.btn{
+        color: #009049;
+        border: 1px double #009049;
+        border-radius: 2px;
+        padding: 4px 10px 1px;
+        display: inline-block;
+        cursor: inherit;
+      }
+    }
+  }
+}
+
+/*=================================
+ PHOTO GALLERY CSS
+==================================*/
+.photo-gallery{
+  .portfolio-grid{
+    .grids{
+      margin-bottom: 30px;
+      .grid{
+        overflow:hidden;
+        padding-bottom: 75%;
+        img{
+          position: absolute;
+          height: 100%;
+          left: 0;
+          max-width: none;
+        }
+        .caption-block{
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          transition:all 0.3s;
+          background-color: #009049!important;
+        h4{
+            color: #fff;
+            font-size: 17px;
+            text-transform: capitalize;
+          }
+        }
+        .figcaption {
+          h4{
+            color: #fff;
+            text-transform: capitalize;
+          }
+          i{
+
+          }
+        }
+      }
+      /*&:hover .figcaption {
+        opacity: 1;
+      }*/
+      &:hover .caption-block{
+        opacity: 0;
+      }
+      &:hover .grid{
+        background-color: rgba(0, 144, 73, 1);
+      }
+      /*&:hover img{
+        opacity: 1;
+      }*/
+    }
+  }
+}
+.photo-gallery-details{
+  .portfolio-grid{
+    .grids{
+      margin-bottom: 30px;
+      .grid{
+        overflow:hidden;
+        padding-bottom: 75%;
+        img{
+          position: absolute;
+          height: 100%;
+          max-width: none;
+        }
+        .figcaption{}
+      }
+    }
+  }
+}
+
+/*=================================
  RESPONSIVE CSS
 ==================================*/
 @media screen and (max-width:767px){
@@ -659,6 +900,17 @@
     padding: 10px 8px;
     &::after{
       color:#EB3D00!important;
+    }
+  }
+  .navbar-nav .open .dropdown-menu {
+    margin-left: 0 !important;
+    >li>a {
+      color: #000!important;
+      border-bottom: 1px solid #e1e1e1!important;
+      padding: 7px;
+      &:hover{
+        color:#EB3D00!important;
+      }
     }
   }
   .navbar-toggle {
@@ -759,9 +1011,11 @@
     opacity: 0.2;
   }
 
-  /* Team*/
-  #team{
-
+  /* What We Do*/
+  .what-we-do{
+    .special-feature{
+      display: block;
+    }
   }
 
   /* Footer */

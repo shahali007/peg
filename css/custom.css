@@ -81,6 +81,14 @@
   padding-bottom: 55px !important;
 }
 
+.m-0 {
+  margin: 0 !important;
+}
+
+.m-r-7 {
+  margin-right: 7px !important;
+}
+
 .border-top {
   border-top: 1px solid #e1e1e1 !important;
 }
@@ -92,7 +100,13 @@
 .section-title h2 {
   font-family: Oswald, sans-serif;
   color: #009049;
-  padding: 0px 0;
+  padding: 0;
+}
+
+.form-control {
+  color: #000 !important;
+  font-family: TrebuchetMS;
+  font-size: 16px;
 }
 
 .d-flex {
@@ -112,6 +126,10 @@
   width: 40px;
 }
 
+.page-header {
+  border-top: none;
+}
+
 /* Header Top Bar css*/
 #top-bar .top-contact a {
   font-size: 16px;
@@ -129,6 +147,10 @@
 }
 
 /* Navbar css */
+.sticky-wrapper.is-sticky #sticker {
+  position: inherit !important;
+}
+
 .navbar-brand {
   display: flex;
   flex-wrap: wrap;
@@ -274,6 +296,7 @@
   background: #009049;
 }
 
+.dropdown-menu > li > a.active,
 .dropdown-menu > li > a:focus,
 .dropdown-menu > li > a:hover {
   background-color: #EB3D00;
@@ -361,7 +384,7 @@
   margin-bottom: 0 !important;
 }
 #who-we-are ul.arrow-style li {
-  ont-size: 16px;
+  font-size: 16px;
   line-height: 20px;
   color: #000;
   font-family: TrebuchetMS;
@@ -412,7 +435,7 @@
   padding-bottom: 0;
 }
 #team .team-item .description {
-  height: 125px;
+  height: 95px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -441,7 +464,7 @@
   font-size: 24px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 #peg-footer .footer-area ul.arrow-style {
   width: 80%;
@@ -513,7 +536,7 @@
 #peg-footer .position-right {
   position: absolute;
   right: 0;
-  bottom: 10px;
+  bottom: 45px;
   top: auto;
 }
 #peg-footer .gray-bg i {
@@ -521,10 +544,22 @@
 }
 
 /*=================================
+ CONTACT PAGE CSS
+==================================*/
+#contact-us .contact-form .btn {
+  background: #009049;
+  border-color: #009049;
+}
+#contact-us .contact-form .btn:hover {
+  background: #EB3D00 !important;
+  border-color: #EB3D00;
+}
+
+/*=================================
  ABOUT PAGE CSS
 ==================================*/
 .about-page-header {
-  height: 300px;
+  height: 220px;
   background-size: cover;
 }
 
@@ -597,6 +632,189 @@
 }
 
 /*=================================
+ CONTACT PAGE CSS
+==================================*/
+.contact-item {
+  margin-bottom: 30px;
+}
+.contact-item h4 {
+  text-transform: capitalize;
+}
+.contact-item h4 i {
+  width: 20px;
+}
+.contact-item h4 span {
+  font-family: Oswald;
+  font-size: 16px;
+}
+.contact-item p {
+  font-family: TrebuchetMS;
+  font-size: 16px;
+  line-height: 21px;
+  padding-left: 25px;
+}
+
+/*=================================
+ BUSINESS STRATEGY CSS
+==================================*/
+.business-strategy p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #000;
+  font-family: TrebuchetMS;
+}
+.business-strategy ul.arrow-style {
+  overflow: visible;
+}
+.business-strategy ul.arrow-style li {
+  font-size: 16px;
+  border: none;
+  color: #000;
+  font-family: TrebuchetMS;
+  padding-left: 24px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.business-strategy ul.arrow-style li:before {
+  color: #fff !important;
+  background: #009049;
+  height: 16px;
+  width: 16px;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 15px;
+  top: 6px;
+  padding-left: 2px;
+}
+
+/*=================================
+ WHAT WE DO CSS
+==================================*/
+.what-we-do .special-feature {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.what-we-do .s-feature-box {
+  margin-bottom: 30px;
+}
+.what-we-do .s-feature-box .mask-top {
+  background: #fff;
+}
+.what-we-do .s-feature-box .mask-top i {
+  color: #009049;
+  font-size: 45px;
+  line-height: 45px;
+}
+.what-we-do .s-feature-box .mask-top h4 {
+  color: #000;
+  text-transform: capitalize;
+  margin-top: 10px;
+}
+.what-we-do .s-feature-box .mask-top h4:before {
+  display: none;
+}
+.what-we-do .s-feature-box .mask-bottom i {
+  color: #fff;
+  font-size: 45px;
+  line-height: 45px;
+}
+.what-we-do .s-feature-box .mask-bottom h4 {
+  color: #fff;
+  text-transform: capitalize;
+}
+
+/*=================================
+ PROJECTS CSS
+==================================*/
+.projects .project-item {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e1e1e1;
+}
+.projects .project-item:last-child {
+  border-bottom: none;
+}
+.projects .project-item h4 {
+  font-family: Oswald;
+  color: #000000;
+  font-size: 18px;
+}
+.projects .project-item p {
+  color: #000;
+  font-family: TrebuchetMS;
+  margin-bottom: 0;
+}
+.projects .project-item p.duration {
+  font-size: 17px;
+}
+.projects .project-item p.btn {
+  color: #009049;
+  border: 1px double #009049;
+  border-radius: 2px;
+  padding: 4px 10px 1px;
+  display: inline-block;
+  cursor: inherit;
+}
+
+/*=================================
+ PHOTO GALLERY CSS
+==================================*/
+.photo-gallery .portfolio-grid .grids {
+  margin-bottom: 30px;
+  /*&:hover .figcaption {
+    opacity: 1;
+  }*/
+  /*&:hover img{
+    opacity: 1;
+  }*/
+}
+.photo-gallery .portfolio-grid .grids .grid {
+  overflow: hidden;
+  padding-bottom: 75%;
+}
+.photo-gallery .portfolio-grid .grids .grid img {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  max-width: none;
+}
+.photo-gallery .portfolio-grid .grids .grid .caption-block {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transition: all 0.3s;
+  background-color: #009049 !important;
+}
+.photo-gallery .portfolio-grid .grids .grid .caption-block h4 {
+  color: #fff;
+  font-size: 17px;
+  text-transform: capitalize;
+}
+.photo-gallery .portfolio-grid .grids .grid .figcaption h4 {
+  color: #fff;
+  text-transform: capitalize;
+}
+.photo-gallery .portfolio-grid .grids:hover .caption-block {
+  opacity: 0;
+}
+.photo-gallery .portfolio-grid .grids:hover .grid {
+  background-color: #009049;
+}
+
+.photo-gallery-details .portfolio-grid .grids {
+  margin-bottom: 30px;
+}
+.photo-gallery-details .portfolio-grid .grids .grid {
+  overflow: hidden;
+  padding-bottom: 75%;
+}
+.photo-gallery-details .portfolio-grid .grids .grid img {
+  position: absolute;
+  height: 100%;
+  max-width: none;
+}
+/*=================================
  RESPONSIVE CSS
 ==================================*/
 @media screen and (max-width: 767px) {
@@ -660,6 +878,18 @@
     padding: 10px 8px;
   }
   .navbar-nav > li > a.has-submenu::after {
+    color: #EB3D00 !important;
+  }
+
+  .navbar-nav .open .dropdown-menu {
+    margin-left: 0 !important;
+  }
+  .navbar-nav .open .dropdown-menu > li > a {
+    color: #000 !important;
+    border-bottom: 1px solid #e1e1e1 !important;
+    padding: 7px;
+  }
+  .navbar-nav .open .dropdown-menu > li > a:hover {
     color: #EB3D00 !important;
   }
 
@@ -759,7 +989,11 @@
     opacity: 0.2;
   }
 
-  /* Team*/
+  /* What We Do*/
+  .what-we-do .special-feature {
+    display: block;
+  }
+
   /* Footer */
   #peg-footer .footer-area ul.arrow-style {
     width: 100%;
