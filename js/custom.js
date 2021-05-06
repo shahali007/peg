@@ -1236,7 +1236,7 @@ var header = jQuery('#home'),
 $(function() {
 	$('.left-sidebar').StickySidebar({
 		// Settings
-		additionalMarginTop: 130
+		additionalMarginTop: 40
 	});
 });
 
