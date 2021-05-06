@@ -65,6 +65,9 @@
 .p-t-35{
   padding-top: 35px!important;
 }
+.p-b-25{
+  padding-bottom: 25px!important;
+}
 .p-b-35{
   padding-bottom: 35px!important;
 }
@@ -426,8 +429,28 @@
 }
 
 /* Clients */
-#clients a:hover img {
-  margin-top: -50px;
+#clients{
+  a{
+    height: 70px;
+    img {
+      height: 70px;
+      margin: 0px auto;
+      max-width: 64%;
+      transition: all 0.3s ease-out 0s;
+      display: block;
+      background: #fff;
+    }
+    &:hover img {
+      margin-top: -35px;
+    }
+    &:hover img.top-img {
+      opacity: 0;
+    }
+    &:hover img.blur-client {
+      filter:grayscale(1);
+    }
+  }
+
 }
 
 /* PEG Footer */
@@ -1008,7 +1031,6 @@
     left: 100%;
     top: 50%;
     transform: translate(-50%, -50%);
-    opacity: 0.2;
   }
 
   /* What We Do*/
