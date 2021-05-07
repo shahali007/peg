@@ -469,6 +469,9 @@
 #clients a:hover img.blur-client {
   filter: grayscale(1);
 }
+#clients .section-title h2:before {
+  display: none;
+}
 
 /* PEG Footer */
 #peg-footer {
@@ -570,6 +573,9 @@
 #contact-us .contact-form .btn {
   background: #009049;
   border-color: #009049;
+  font-family: TrebuchetMS;
+  font-size: 16px;
+  font-weight: bold;
 }
 #contact-us .contact-form .btn:hover {
   background: #EB3D00 !important;
