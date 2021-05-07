@@ -450,6 +450,9 @@
       filter:grayscale(1);
     }
   }
+  .section-title h2:before{
+    display:none;
+  }
 
 }
 
@@ -566,6 +569,9 @@
     .btn{
       background: #009049;
       border-color:#009049;
+      font-family: TrebuchetMS;
+      font-size: 16px;
+      font-weight: bold;
       &:hover{
         background: #EB3D00!important;
         border-color:#EB3D00
